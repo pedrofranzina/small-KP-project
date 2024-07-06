@@ -75,6 +75,7 @@ main {
         width: 60%;
         margin-left: 18%;
         margin-top: 60px;
+        margin-bottom: 120px;
         // max-width: 60ch;
 
         h1 {
@@ -89,6 +90,7 @@ main {
         }
 
         a {
+            color: rgb(26, 127, 120);
             font-size: 1.25rem;
 
             &:hover {
@@ -103,6 +105,93 @@ main {
             line-height: 1.8rem;
             padding-top: 1rem;
             width: 88%;
+        }
+    }
+
+    .contender {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .box {
+            width: 26%;
+            padding: 2rem;
+            border-radius: 1em;
+            box-shadow: 0 .25em 1em rgba(0, 0, 0, .1);
+            line-height: 1.6rem;
+            height: fit-content;
+
+            h1 a {
+                font-size: 30px;
+                text-decoration: none;
+                color: #4d4d4d;
+                font-weight: 700;
+
+                &:hover {
+                    color: #1a7f78;
+                }
+            }
+
+            h3 {
+                padding: 0.2rem 0rem 1rem 0rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+                letter-spacing: -.5px;
+
+                b {
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                box-shadow: 0 .125em .5em rgba(0, 0, 0, .15);
+                background-color: #1a7f78;
+                border-radius: 100vw;
+                color: #fff;
+                border: none;
+                padding: .95em 1.75em .85em;
+                display: inline-block;
+                line-height: 1;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.1rem;
+                margin-top: 1rem;
+
+                &:hover {
+                    transform: scale(1.05) translateY(-.125em);
+                    transition: transform .2s ease, -webkit-transform .2s ease;
+                    box-shadow: 0 .5em 2.25em #000;
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    margin-top: 240px;
+    background-color: #dedede;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: #4d4d4d;
+
+    p {
+        padding: 40px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        li a {
+            color: #4d4d4d;
+            font-weight: 700;
         }
     }
 }

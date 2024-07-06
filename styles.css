@@ -60,6 +60,7 @@ main .courses {
   width: 60%;
   margin-left: 18%;
   margin-top: 60px;
+  margin-bottom: 120px;
 }
 main .courses h1 {
   font-size: 80px;
@@ -72,6 +73,7 @@ main .courses h1 {
   padding: 2rem 0rem;
 }
 main .courses a {
+  color: rgb(26, 127, 120);
   font-size: 1.25rem;
 }
 main .courses a:hover {
@@ -83,4 +85,79 @@ main .courses p {
   line-height: 1.8rem;
   padding-top: 1rem;
   width: 88%;
+}
+main .contender {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .contender .box {
+  width: 26%;
+  padding: 2rem;
+  border-radius: 1em;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.1);
+  line-height: 1.6rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .contender .box h1 a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 700;
+}
+main .contender .box h1 a:hover {
+  color: #1a7f78;
+}
+main .contender .box h3 {
+  padding: 0.2rem 0rem 1rem 0rem;
+}
+main .contender .box p {
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
+}
+main .contender .box p b {
+  font-weight: bold;
+}
+main .contender .box button {
+  box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  background-color: #1a7f78;
+  border-radius: 100vw;
+  color: #fff;
+  border: none;
+  padding: 0.95em 1.75em 0.85em;
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+}
+main .contender .box button:hover {
+  transform: scale(1.05) translateY(-0.125em);
+  transition: transform 0.2s ease;
+  box-shadow: 0 0.5em 2.25em #000;
+}
+
+footer {
+  margin-top: 240px;
+  background-color: #dedede;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  color: #4d4d4d;
+}
+footer p {
+  padding: 40px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  gap: 20px;
+}
+footer ul li a {
+  color: #4d4d4d;
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
