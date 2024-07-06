@@ -1,8 +1,5 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -66,6 +63,46 @@ header nav {
 
         li:nth-child(6) a {
             color: #1a7f78;
+        }
+    }
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+
+    .courses {
+        width: 60%;
+        margin-left: 18%;
+        margin-top: 60px;
+        // max-width: 60ch;
+
+        h1 {
+            font-size: 80px;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            line-height: 88px;
+            font-stretch: 80px;
+            font-variation-settings: "wdth" 80, "wght" 900;
+            color: rgb(26, 127, 120);
+            padding: 2rem 0rem;
+        }
+
+        a {
+            font-size: 1.25rem;
+
+            &:hover {
+                color: #db2c00;
+                text-decoration: none;
+            }
+        }
+
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.8rem;
+            padding-top: 1rem;
+            width: 88%;
         }
     }
 }
