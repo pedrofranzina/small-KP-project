@@ -1,3 +1,7 @@
+$smartphone: 768px;
+$notebook: 1024px;
+$desktop: 1440px;
+
 body,
 html {
     font-family: 'Rubik', sans-serif;
@@ -7,63 +11,68 @@ header nav {
     height: 106px;
     align-content: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px 0px;
+}
 
-    #courses {
-        border-bottom: 4px solid #1a7f78;
+#courses {
+    border-bottom: 4px solid #1a7f78;
+
+    &:hover {
+        border: none;
+    }
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    @media only screen and (max-width: $notebook) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li a {
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+        line-height: 25.6px;
+        font-variation-settings: "wdth" 80, "wght" 600;
+        text-decoration: none;
+        border-bottom: 2px solid;
+        color: #000;
 
         &:hover {
             border: none;
+            color: #000;
         }
     }
 
-    ul {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
+    li:nth-child(1) a {
+        color: #db2c00;
+    }
 
-        li a {
-            text-transform: uppercase;
-            font-size: 1rem;
-            letter-spacing: -0.5px;
-            line-height: 25.6px;
-            font-variation-settings: "wdth" 80, "wght" 600;
-            text-decoration: none;
-            border-bottom: 2px solid;
-            color: #000;
-
-            &:hover {
-                border: none;
-                color: #000;
-            }
-        }
-
-        li:nth-child(1) a {
-            color: #db2c00;
-        }
-
-        li:nth-child(2) a {
-            color: #255b98;
+    li:nth-child(2) a {
+        color: #255b98;
 
 
-        }
+    }
 
-        li:nth-child(3) a {
-            color: #dd0e42;
+    li:nth-child(3) a {
+        color: #dd0e42;
 
 
-        }
+    }
 
-        li:nth-child(4) a {
-            color: #1a7f78;
-        }
+    li:nth-child(4) a {
+        color: #1a7f78;
+    }
 
-        li:nth-child(5) a {
-            color: #7b2d6d;
-        }
+    li:nth-child(5) a {
+        color: #7b2d6d;
+    }
 
-        li:nth-child(6) a {
-            color: #1a7f78;
-        }
+    li:nth-child(6) a {
+        color: #1a7f78;
     }
 }
 
@@ -87,6 +96,22 @@ main {
             font-variation-settings: "wdth" 80, "wght" 900;
             color: rgb(26, 127, 120);
             padding: 2rem 0rem;
+
+            @media only screen and (max-width: 700px) {
+                font-size: 75px;
+            }
+
+            @media only screen and (max-width: 650px) {
+                font-size: 70px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 65px;
+            }
+
+            @media only screen and (max-width: 550px) {
+                font-size: 60px;
+            }
         }
 
         a {
@@ -113,6 +138,18 @@ main {
         flex-wrap: wrap;
         gap: 2rem;
 
+        @media only screen and (max-width: 1400px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: $notebook) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
         .box {
             width: 26%;
             padding: 2rem;
@@ -120,6 +157,18 @@ main {
             box-shadow: 0 .25em 1em rgba(0, 0, 0, .1);
             line-height: 1.6rem;
             height: fit-content;
+
+            @media only screen and (max-width: 1400px) {
+                width: 35%;
+            }
+
+            @media only screen and (max-width: $smartphone) {
+                width: 100%;
+            }
+
+
+
+
 
             h1 a {
                 font-size: 30px;
